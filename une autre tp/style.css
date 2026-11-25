@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #303030;
+    font-family: arial, sans-serif;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.List-container{
+    width: 90%;
+    max-width: 720px;
+    min-height: 450px;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: #111;
+}
+.List-icon{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.input-container{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+#EtudiantInput{
+    flex: 1;
+    padding: 18px;
+    border: none;
+    outline: none;
+    background: #e9edf3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#addBtn{
+    padding: 0 35px;
+    border: none;
+    border-radius: 6px;
+    background: #5caf4b;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+#addBtn:hover{
+    background: #49983b;
+}
+#TableE{
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#TableE th,
+#TableE td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#TableE th {
+    background-color: #eee;
+}
+@media (max-width: 240px) {
+    .todo-container{padding: 30 px 20px;}
+    .title{font-size: 36px;}
+    #addBtn{padding: 0 20px;}
+}
